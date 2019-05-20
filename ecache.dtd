@@ -10,20 +10,20 @@
 
 <!ELEMENT event (key|flush|trigger)>
 <!ATTLIST event
-	id ID #IMPLIED
-	name CDATA #IMPLIED
-	ref IDREF #IMPLIED
-	lazy (false|true) #IMPLIED
+    id ID #IMPLIED
+    name CDATA #IMPLIED
+    ref IDREF #IMPLIED
+    lazy (false|true) #IMPLIED
 >
 
 <!ELEMENT key (#PCDATA)*>
 <!ATTLIST key
-	bucket CDATA #IMPLIED
+    bucket CDATA #IMPLIED
 >
 
 <!ELEMENT flush (#PCDATA)*>
 <!ATTLIST flush
-	enable (true|false)  #IMPLIED
+    enable (true|false)  #IMPLIED
     time CDATA #REQUIRED
     max CDATA #REQUIRED
 >
