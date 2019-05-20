@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   ECache event configuration DTD.
+   Use the following DOCTYPE
+   
+   <!DOCTYPE ecache PUBLIC "-//eason.xp.yu@gmail.com//DTD ECACHE Config 1.0//zh-CN" "ecache.dtd">
+-->
+
+<!ELEMENT ecache (event)+>
+
+<!ELEMENT event (key|flush|trigger)+>
+<!ATTLIST event
+	id ID #IMPLIED
+	name CDATA #IMPLIED
+	ref IDREF #IMPLIED
+	lazy (true|false) #IMPLIED
+>
+
+<!ELEMENT key (#PCDATA)*>
+<!ATTLIST key
+	bucket CDATA #IMPLIED
+>
+
+<!ELEMENT flush (#PCDATA)*>
+<!ATTLIST flush
+	enable (true|false)  #IMPLIED
+    time CDATA #REQUIRED
+    max CDATA #REQUIRED
+>
+
+<!ELEMENT trigger (event)+>
