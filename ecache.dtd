@@ -8,12 +8,12 @@
 
 <!ELEMENT ecache (event)+>
 
-<!ELEMENT event (key|flush|trigger)+>
+<!ELEMENT event (key|flush|trigger)>
 <!ATTLIST event
 	id ID #IMPLIED
 	name CDATA #IMPLIED
 	ref IDREF #IMPLIED
-	lazy (true|false) #IMPLIED
+	lazy (false|true) #IMPLIED
 >
 
 <!ELEMENT key (#PCDATA)*>
