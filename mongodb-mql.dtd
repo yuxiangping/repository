@@ -3,9 +3,7 @@
    Mongodb mql configuration DTD.
    Use the following DOCTYPE
    
-   <!DOCTYPE mql PUBLIC 
-	"-//eason.xp.yu@gmail.com//DTD MONGODB SQL Map Config 1.0//ZH-CN"
-	"mongodb-mql.dtd">
+   <!DOCTYPE mql PUBLIC "-//eason.xp.yu@gmail.com//DTD MONGODB SQL Map Config 1.0//ZH-CN" "mongodb-mql.dtd">
 -->
 
 <!ELEMENT mql (mapping|select|update|insert|delete|command|group|aggregate)+>
