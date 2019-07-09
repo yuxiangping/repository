@@ -23,7 +23,7 @@
 
 <!ELEMENT flush (#PCDATA)*>
 <!ATTLIST flush
-    enable (true|false)  #IMPLIED
+    enable (false|true)  #IMPLIED
     time CDATA #REQUIRED
     max CDATA #REQUIRED
 >
