@@ -3,7 +3,7 @@
    ECache event configuration DTD.
    Use the following DOCTYPE
    
-   <!DOCTYPE ecache PUBLIC "-//eason.xp.yu@gmail.com//DTD ECACHE Config 1.0//zh-CN" "ecache-2.0.dtd">
+   <!DOCTYPE ecache PUBLIC "-//eason.xp.yu@gmail.com//DTD ECACHE Config 1.0//zh-CN" "ecache.dtd">
 -->
 
 
@@ -24,9 +24,9 @@
 
 <!ELEMENT expire (#PCDATA)*>
 <!ATTLIST expire
-    flush (false|true)  #IMPLIED
     time CDATA #REQUIRED
-    max CDATA #REQUIRED
+    flush (false|true)  #IMPLIED
+    max CDATA #IMPLIED
 >
 
 <!ELEMENT trigger (event)+>
