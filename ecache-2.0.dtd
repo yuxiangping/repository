@@ -7,7 +7,7 @@
 -->
 
 
-<!ELEMENT ecache (event)+>
+<!ELEMENT ecache (event)*>
 
 <!ELEMENT event (key|expire|trigger|nocache)+>
 <!ATTLIST event
